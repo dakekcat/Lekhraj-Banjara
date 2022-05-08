@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://devdivyamsu.web.app/store/store.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>My store</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		* {
+			font-family: Arial, Helvetica, sans-serif;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			grid-column: unset;
+			grid-row: 5px;
+		}
+		
+		.wrapper {
+			display: grid;
+			align-items: center;
+			justify-content: grid;
+		}
+		.signup {
+			background-color: #FB4252;
+			padding: 20px;
+			border-radius: 10px;
+			border: none;
+			text-align: right;
+
+		}
+		.a {
+			border: 2px solid black;
+			border-radius: 20px;
+			width: 50%;
+			text-align: center;
+			cursor: pointer;
+			transition: all 0.30s;
+		}
+		.a:hover {
+			border: 2px linear linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+			padding: 30px;
+			width: 95%;
+		}
+		.b {
+			border: 2px solid black;
+			border-radius: 20px;
+			width: 50%;
+			text-align: center;
+			cursor: pointer;
+			transition: all 0.30s;
+		}
+		.b:hover {
+			border: 2px linear linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+			padding: 30px;
+			width: 95%;
+		}
+		.container-grid {
+			display: grid;
+			justify-content: grid;
+			align-items: grid;
+			
+		}
+
+		/* responsive */
+		@media screen and (max-width: 1024px) { /* compact mode */
+			* {
+				visibility: hidden;
+			}
+		}
+	</style>
+</head>
+<body>
+
+		<div></div> <!-- Css grid -->
+
+
+	<div class="container">
+		<div class="wrapper">
+			<h1 class="logo">My store<span style="color:#FB4252;">.</span></h1>
+			<div class="flex container-grid">
+				<div class="a" onclick="static()">
+					<div class="a-img">
+						<img src="./My store_files/freelancer.svg" alt="o" id="freelancer">
+					</div>
+					<div class="a-info" style="font-size:25px;background-color:#FB4252;color:white;padding:25px;border-radius:20px;">
+						I will build a static Web Site for you.
+					</div>
+				</div>
+				<br><br>
+				<div class="b" onclick="dynamic()">
+					<div class="b-img">
+						<img src="./My store_files/dynamic.svg" style="width:60%;">
+					</div>
+					<div class="b-info" style="font-size:25px;background-color:#FB4252;color:white;padding:25px;border-radius:20px;">
+						I will build a Dynamic Web Site for you.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="scripts">
+		<script>
+			function dynamic() {
+				window.location.href = "./dynamic/get.html"
+			}
+		</script>
+		<script>
+			function static() {
+				window.location.href = "./static/get.html";
+			}
+		</script>
+
+
+
+		<!-- traffic, cookies -->
+
+		<script>
+		</script>
+	</div>
+
+
+
+<!-- Details ------ -->
+
+<!-- Site made in Tuesday, october 19, 2021 -->
+
+<!-- Hosted using firebase, (Php not used) -->
+
+<!-- Authenciation systems weren't made by me --></body></html>
